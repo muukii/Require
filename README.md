@@ -5,10 +5,10 @@
 let value: String?
 
 // Catch error if value is nil
-try value.require()
+let v: String = try value.require()
 
 // Cause fatalError if value is nil
-value.unsafeRequire()
+let v: String = value.unsafeRequire()
 
 ```
 
